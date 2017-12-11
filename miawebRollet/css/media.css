@@ -1,0 +1,39 @@
+/*@media only screen and (min-width: 500px)  {
+	.wrapper {
+
+	
+        grid-template-columns: repeat (2, 1fr;) 
+        grid-template-areas:
+               "logo nav "
+               "side1 side1"
+               "details details"
+               "det1 det2" 
+               "det3 det4 "
+               "about about"
+               "ads ads" 
+               "social social"
+               "contact contact"
+               "foot foot"
+	}
+	}
+*/
+
+@media only screen and (min-width: 950px)  {
+	.wrapper {
+
+grid-gap: 10px;
+grid-template-columns: repeat (6,1fr;)
+grid-template-areas:
+               "logo logo nav nav nav nav"
+               "side1 side1 details details details details "
+               "side1 side1 det1 det2 det3 det4 "
+               "about about about about about about"
+               "ads ads ads social social social"
+               "contact contact contact contact contact contact"
+               "foot foot foot foot foot foot"
+               max-width: 950px;
+         
+} 
+}
+
+

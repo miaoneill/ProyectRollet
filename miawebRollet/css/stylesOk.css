@@ -1,0 +1,828 @@
+/*last edited: 11/12/17*/
+
+/*  page body code */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body { 
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+
+}
+   
+img{
+max-width: 100%;
+}
+
+.wrapperMain, .wrapperHistory, .wrapperShop, .wrapperContact{ 
+width:100%;
+margin:0 auto;
+}
+
+.container { 
+width:100%;
+}
+/* finish body code */
+
+
+/* codes for  wrapperMain grid */
+
+.logo {grid-area: logo;}
+.menu {grid-area: menu;}
+.photoin {grid-area: photoin;}
+.freeship {grid-area: freeship;}
+.historytx {grid-area: historytx;}
+.photocof1  {grid-area: photocof1;}
+.subs {grid-area: subs;}
+.photopro {grid-area: photopro;}
+.shopx {grid-area: shopx;}
+.ico1 {grid-area: ico1;}
+.ico2 {grid-area: ico2;}
+.ico3 {grid-area: ico3;}
+.ico4 {grid-area: ico4;}
+.foot1 {grid-area: foot1;}
+.foot2 {grid-area: foot2;}
+.foot3 {grid-area: foot3;}
+.copyr {grid-area: copyr;}
+
+
+.wrapperMain{
+display: grid;
+grid-gap: 0px;
+grid-template-areas:
+               "logo" 
+               "menu"
+               "photoin"
+               "freeship"
+               "historytx"
+               "photocof1" 
+               "subs" 
+               "photopro"
+               "shopx" 
+               "ico1"
+               "ico2"
+               "ico3"
+               "ico4"
+               "foot1"
+               "foot2"
+               "foot3"
+	             "copyr" 
+         
+} 
+
+
+@media only screen and (min-width: 650px)  {
+	.wrapperMain {
+        grid-gap: 0px;
+		grid-template-columns: 50% auto;
+    grid-template-rows: auto;
+		grid-template-areas:
+        "logo logo"
+        "menu menu"
+        "photoin photoin"
+        "freeship freeship"
+        "historytx photocof1"
+        "subs subs" 
+        "photopro shopx"
+        "ico1 ico2"
+        "ico3 ico4"
+		    "foot1 foot1"
+        "foot2 foot2"
+        "foot3 foot3"
+        "copyr copyr";
+	}
+	}
+
+@media only screen and (min-width: 1400px)   {
+		.wrapperMain {
+            grid-gap: 0px;
+			grid-template-columns: 25% 25% 25% 25%;
+			grid-template-areas:
+               "logo logo logo logo"
+               "menu menu menu menu"
+               "photoin photoin photoin photoin"
+               "freeship freeship freeship freeship"
+               "historytx historytx photocof1 photocof1"
+               "subs subs subs subs"
+               "photopro photopro shopx shopx"
+               "ico1 ico2 ico3 ico4"
+               "foot1 foot1 foot1 foot1"
+               "foot2 foot2 foot2 foot2"
+               "foot3 foot3 foot3 foot3"
+				       "copyr copyr copyr copyr";
+			max-width: 1400px;
+		}
+	}
+
+
+/* finish codes for  wrapperMain grid */
+
+/* codes for  wrapperHistory grid */
+
+.logo {grid-area: logo;}
+.menu {grid-area: menu;}
+.photoin {grid-area: photoin;}
+.ital {grid-area: ital;}
+.histx1 {grid-area: histx1;}
+.pho1 {grid-area: pho1;}
+.pho2 {grid-area: pho2;}
+.histx2 {grid-area: histx2;}
+.belt  {grid-area: belt;}
+.fair {grid-area: fair;}
+.lofair {grid-area: lofair;}
+.subx {grid-area: subx;}
+.shopx {grid-area: shopx;}
+.foot1 {grid-area: foot1;}
+.foot2 {grid-area: foot2;}
+.foot3 {grid-area: foot3;}
+.copyr {grid-area: copyr;}
+
+
+.wrapperHistory{
+display: grid;
+grid-gap: 0px;
+grid-template-areas:
+               "logo" 
+               "menu"
+               "photoin"
+               "ital"
+               "histx1"
+               "pho1" 
+               "pho2" 
+               "histx2"
+                "belt" 
+               "fair"
+               "lofair"
+               "subx"
+               "shopx"
+               "foot1"
+               "foot2"
+               "foot3"
+               "copyr" 
+         
+} 
+
+
+@media only screen and (min-width: 650px)  {
+  .wrapperHistory {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 50% auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "logo logo"
+        "menu menu"
+        "photoin photoin"
+        "ital ital"
+        "histx1 histx1"
+        "pho1 pho2" 
+        "histx2 histx2"
+        "belt belt"
+        "fair lofair"
+        "subx shopx"
+        "ico1 ico2"
+        "ico3 ico4"
+        "foot1 foot1"
+        "foot2 foot2"
+        "foot3 foot3"
+        "copyr copyr";
+  }
+  }
+
+@media only screen and (min-width: 1400px)   {
+    .wrapperHsitory {
+            grid-gap: 0px;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-areas:
+               "logo logo logo logo"
+               "menu menu menu menu"
+               "photoin photoin photoin photoin"
+               "ital ital ital ital"
+               "histx1 histx1 histx1 histx1"
+               "pho1 pho1 pho2 pho2"
+               "histx2 histx2 histx2 histx2"
+               "belt belt belt belt"
+               "fair fair lofair lofair"
+               "subx subx shopx shopx"
+               "foot1 foot1 foot1 foot1"
+               "foot2 foot2 foot2 foot2"
+               "foot3 foot3 foot3 foot3"
+               "copyr copyr copyr copyr";
+      max-width: 1400px;
+    }
+  }
+
+  /* finish codes for  wrapperHistory grid */
+
+ /*  codes for  wrapperShop grid */
+
+.logo {grid-area: logo;}
+.menu {grid-area: menu;}
+.photoin {grid-area: photoin;}
+.freeship {grid-area: freeship;}
+.shoptx {grid-area: shoptx;}
+.pro1  {grid-area: pro1;}
+.pro2  {grid-area: pro2;}
+.pro3  {grid-area: pro3;}
+.pro4  {grid-area: pro4;}
+.pro5  {grid-area: pro5;}
+.pro6  {grid-area: pro6;}
+.pro7  {grid-area: pro7;}
+.pro8  {grid-area: pro8;}
+.subs {grid-area: subs;}
+.foot1 {grid-area: foot1;}
+.foot2 {grid-area: foot2;}
+.foot3 {grid-area: foot3;}
+.copyr {grid-area: copyr;}
+
+
+.wrapperShop{
+display: grid;
+grid-gap: 0px;
+grid-template-areas:
+               "logo" 
+               "menu"
+               "photoin"
+               "freeship"
+               "shoptx"
+               "pro1" 
+               "pro2"
+               "pro3"
+               "pro4"
+               "pro5"
+               "pro6"
+               "pro7"
+               "pro8"
+               "subs" 
+               "foot1"
+               "foot2"
+               "foot3"
+               "copyr" 
+         
+} 
+
+
+@media only screen and (min-width: 650px)  {
+  .wrapperShop {
+        grid-gap: 0px;
+    grid-template-columns: 50% auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "logo logo"
+        "menu menu"
+        "photoin photoin"
+        "freeship freeship"
+        "shoptx shoptx"
+        "pro1 pro2"
+        "pro3 pro4"
+        "pro5 pro6"
+        "pro7 pro8"
+        "subs subs"
+        "foot1 foot1"
+        "foot2 foot2"
+        "foot3 foot3"
+        "copyr copyr";
+  }
+  }
+
+@media only screen and (min-width: 1400px)   {
+    .wrapperShop {
+            grid-gap: 0px;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-areas:
+               "logo logo logo logo"
+               "menu menu menu menu"
+               "photoin photoin photoin photoin"
+               "freeship freeship freeship freeship"
+               "shoptx shoptx shoptx shoptx"
+               "pro1 pro2 pro3 pro4"
+               "pro5 pro6 pro7 pro8"
+               "subs subs subs subs"
+               "foot1 foot1 foot1 foot1"
+               "foot2 foot2 foot2 foot2"
+               "foot3 foot3 foot3 foot3"
+               "copyr copyr copyr copyr";
+      max-width: 1400px;
+    }
+  }
+  /* finish codes for  wrapperShop grid */
+
+
+   /* codes for  wrapperContact grid */
+
+   .logo {grid-area: logo;}
+.menu {grid-area: menu;}
+.photoin {grid-area: photoin;}
+.contx1 {grid-area: contx1;}
+.envelope {grid-area: envelope;}
+.mapc {grid-area: mapc;}
+.foot1 {grid-area: foot1;}
+.foot2 {grid-area: foot2;}
+.foot3 {grid-area: foot3;}
+.copyr {grid-area: copyr;}
+
+
+.wrapperContact{
+display: grid;
+grid-gap: 0px;
+grid-template-areas:
+               "logo" 
+               "menu"
+               "photoin"
+               "contx1"
+               "envelope"
+               "mapc"
+               "foot1"
+               "foot2"
+               "foot3"
+               "copyr" 
+         
+} 
+
+
+@media only screen and (min-width: 650px)  {
+  .wrapperContact {
+        grid-gap: 0px;
+    grid-template-columns: 50% auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "logo logo"
+        "menu menu"
+        "photoin photoin"
+        "contx1 contx1"
+        "envelope envelope"
+        "mapc mapc"
+        "foot1 foot1"
+        "foot2 foot2"
+        "foot3 foot3"
+        "copyr copyr";
+  }
+  }
+
+@media only screen and (min-width: 1400px)   {
+    .wrapperContact {
+            grid-gap: 0px;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-areas:
+               "logo logo logo logo"
+               "menu menu menu menu"
+               "photoin photoin photoin photoin"
+               "contx1 contx1 contx1 contx1"
+               "envelope envelope envelope envelope"
+                "mapc mapc mapc mapc"
+               "foot1 foot1 foot1 foot1"
+               "foot2 foot2 foot2 foot2"
+               "foot3 foot3 foot3 foot3"
+               "copyr copyr copyr copyr";
+      max-width: 1400px;
+    }
+  }
+
+
+/* finish codes for  wrapperContact grid */
+
+
+
+
+/*  codes for  all pages styles */
+
+.box {
+border:0px solid lightgray;
+color: white;
+font-size: 100%;
+padding: 2em;
+}
+
+
+
+/*NAV BAR CODES*/
+
+.menu{
+  text-align:center;
+  line-height:70px;
+  width:100%;
+  background-color: white;
+  font-weight: bold;
+font-size: 16px;
+  }
+
+.navi{
+  text-align:center;
+}
+
+#toggle{
+  display:none;
+}
+
+label{
+  font-size:26px;
+  margin-right:0px;
+  display:none;
+  color: #651A0D; /*burgundy*/
+}
+.navi a{
+  text-decoration:none;
+  color: #651A0D; /*burgundy*/
+  margin-left:30px;
+  text-transform:capitalize;
+}
+a:hover{
+  color:#B35D27; /*orange*/
+}
+
+
+
+@media only screen and (max-width:650px)
+{
+  label,   .menu label.navi1 {
+    display:block;
+  }
+
+  .navi a{
+    display:block;
+    text-align:center;
+    margin:auto;
+    border-bottom:0px solid #fff;
+  }
+  .navi{
+    margin:auto;
+    display:none;
+  }
+
+  #toggle:checked + .navi{
+    display:block;
+  }
+}
+
+/*NAV BAR CODES*/
+
+
+
+
+
+.logo{
+  text-align: center;/*logo align center*/
+}
+
+
+
+.freeship{
+background-color: #651A0D; /*burgundy*/
+color: white;
+font-family:  'Raleway', sans-serif;
+font-weight: bold;
+font-size:10px;
+text-transform: uppercase;
+letter-spacing: 3px;
+line-height: 20px;
+text-align: center;
+padding: 1em;
+}
+
+
+
+
+.t1{
+font-family: 'Raleway', sans-serif;
+font-size: 30px;
+color: #B35D27; /*orange*/ 
+letter-spacing: 2px;
+text-transform: uppercase;
+text-align: center;
+font-weight: bold;
+
+}
+
+hr {
+width: 40px; 
+text-align: center;
+border-top: 4px solid #B35D27; /*orange*/ 
+box-shadow: none;
+}
+
+.t3{
+font-family:  'Open Sans Condensed', sans-serif;
+color: #483318; /*darkbrown*/
+line-height: 5px;
+font-size: 16px;
+letter-spacing: 2px;
+line-height: 0px;
+text-transform: uppercase;
+text-align: center;
+padding-bottom: 5px;
+padding-top: 0px;
+font-weight: bold;
+}
+
+p{
+font-family: 'Open Sans', sans-serif;
+color: #483318; /*darkbrown*/
+font-size: 14px;
+text-transform: none; 
+letter-spacing: 1px;
+line-height: 20px;
+text-align: center;
+
+
+}
+
+/* codes subscription grid of index*/   
+.subs{   
+	background-color: #483318; /*darkbrown*/
+	text-align: center;
+}
+
+/*.subs:hover {
+    background-color: #651A0D; /*burgundy
+}
+*/
+
+/* codes subscription grid of history*/  
+.subx{   
+    background-color: #483318; /*darkbrown*/ 
+  text-align: center;
+}
+
+/*
+.subx:hover {
+    background-color: #651A0D; /*burgundy
+}
+*/
+
+
+/*form*/
+
+
+
+input[type=submit] {
+    background-color: #B35D27; /*orange*/ 
+    color: white;
+    padding: 12px 20px 10px 10px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    
+	width: 50%;
+}
+
+input[type=text], select, textarea{
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #B35D27;/*orange*/ 
+    border-radius: 2px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+label {
+    
+    display: inline-block;
+	text-align: center;
+}
+label.navi1{display:none;}
+
+.row :hover{
+background-color:  #651A0D; /*burgundy*/
+border: 1px solid #651A0D; /*burgundy*/
+}
+/* end form*/
+
+
+.photopro{   
+	text-align: center;
+}
+
+.pho1, .pho2{
+  text-align:center;
+}
+
+.shopx{
+	text-align: center;
+  background-color: #AE7A2B; /*burgundy*/
+}
+
+.shopwhite{
+  background-color: white;
+}
+/*.shopx:hover{
+background-color: #651A0D; /*burgundy
+}
+*/
+.ico1{
+	text-align: center;
+	background-color: #651A0D; /*burgundy*/
+}
+
+.icotext{
+	color: white;
+}
+
+.icoimage{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+
+.ico2{
+	text-align: center;
+	background-color: #B35D27;
+}
+
+.ico3{
+	text-align: center;
+	background-color: #588773;
+}
+
+.ico4{
+	text-align: center;
+	background-color: #AE7A2B;
+}
+
+.copyr{
+font-family: 'Raleway', sans-serif;
+font-size: 12px;
+color: #B35D27; /*orange*/ 
+width: 100%;
+text-align: center;	
+}
+
+
+.t4 a{
+font-family: 'Raleway', sans-serif;
+font-size: 10px;
+color: #B35D27; /*orange*/ 
+letter-spacing: 2px;
+text-transform: uppercase;
+text-align: center;
+font-weight: bold;
+text-decoration: none;
+}
+
+.quicklinks{
+text-align: center;
+margin: 0px;
+}
+
+.brown{
+background-color: #483318;
+}
+
+.conta{
+font-family: 'Raleway', sans-serif;
+font-size: 10px;
+color: #B35D27; /*orange*/ 
+letter-spacing: 2px;
+text-transform: uppercase;
+text-align: center;
+font-weight: bold;
+text-decoration: none;
+}
+
+.deliv{
+text-align: center;
+margin: 0px;
+}
+
+#frase{
+  font-family: 'Montserrat', sans-serif;
+font-size: 20px;
+ text-align: center;
+ color: #651A0D; /*burgundy*/;
+ font-style: italic;
+ letter-spacing: 2px;
+line-height: 30px;
+padding:1em;
+}
+
+.fair{
+  padding:2em;
+}
+
+
+/* style for box shops*/
+
+.t5{
+  background-color: #B35D27;
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+
+.price{
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.row{
+  text-align: center;
+  border-bottom: 5px;
+}
+ .smalltext {
+  font-size: 12px;
+  font-weight: bold;
+ }
+
+ .bold{
+  text-transform: uppercase;
+
+ }
+ .bag{
+  padding: 1em;
+  border: 1px solid lightgray;
+  text-align: center;
+ }
+
+/* style end box shops*/
+#anima{
+opacity: 1;
+
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   }
+
+#anima:hover {
+opacity: 0.85;
+      }
+
+.quicklinks a:hover {
+    color: #651A0D; /*burgundy*/
+}
+
+/*text of free shipping banner*/
+.quotes {display: none;}
+
+/*text of free shipping banner*/
+
+/* Conact page form Makes responsive fields. Sets size and field alignment.*/
+.envelope{
+
+ text-align:center;
+}
+
+
+
+input[type=text]{
+
+margin-bottom: 20px;
+margin-top: 10px;
+width:70%;
+padding: 10px;
+border-radius:3px;
+border:1px solid #B35D27; /*orange*/
+}
+
+input[type=submit]
+{
+margin-bottom: 20px;
+width:70%;
+padding: 15px;
+border-radius:3px;
+border:1px solid #B35D27; /*orange*/
+background-color: #B35D27; /*orange*/
+font-size:15px;
+cursor:pointer;
+
+}
+
+#submit:hover{
+background-color: #651A0D; /*burgundy*/
+}
+
+textarea{
+width:70%;
+padding: 15px;
+margin-top: 10px;
+border:1px solid #B35D27; /*orange*/
+border-radius:3px;
+margin-bottom: 20px;
+resize:none;
+
+
+}
+
+input[type=text]:focus,textarea:focus {
+border-color:  #651A0D; /*burgundy*/
+
+}
+
+.colorform{
+text-align: center;
+font-family: 'Raleway', sans-serif;
+font-size: 14px;
+color: #B35D27; /*orange*/
+display: inline-block;
+
+}
+
+label.navi1{display:none;}
+/* end of contact form*/
